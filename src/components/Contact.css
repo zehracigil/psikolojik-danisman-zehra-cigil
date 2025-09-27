@@ -1,0 +1,235 @@
+.contact {
+  background-color: var(--bg-soft-1);
+  padding: 100px 0;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.contact-form-container {
+  background: rgba(255,255,255,0.8);
+  padding: 3rem;
+  border-radius: 16px;
+  border: 1px solid color-mix(in oklab, var(--accent) 20%, #ffffff);
+  box-shadow: 0 12px 32px rgba(47, 72, 88, 0.08);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-label {
+  font-size: 0.85rem;
+  color: var(--text-body);
+  margin-bottom: 0.35rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 1rem;
+  border: 2px solid color-mix(in oklab, var(--text-body) 10%, #e0e0e0);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.consent-section {
+  margin: 1rem 0;
+}
+
+.consent-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.consent-item input[type=\"checkbox\"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: var(--accent);
+}
+
+.consent-item label {
+  font-size: 0.95rem;
+  color: var(--text-body);
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.submit-btn:disabled {
+  background-color: color-mix(in oklab, var(--accent) 35%, #cccccc);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.submit-message {
+  background-color: color-mix(in oklab, var(--accent) 22%, #ffffff);
+  color: var(--text-heading);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  text-align: center;
+  border: 1px solid color-mix(in oklab, var(--accent) 40%, #ffffff);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-card {
+  background: rgba(255,255,255,0.8);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 1px solid color-mix(in oklab, var(--accent) 20%, #ffffff);
+  box-shadow: 0 12px 32px rgba(47, 72, 88, 0.08);
+}
+
+.info-card h3 {
+  color: var(--text-heading);
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.info-item {
+  margin-bottom: 1.5rem;
+}
+
+.info-item strong {
+  color: var(--text-heading);
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.info-item p {
+  color: var(--text-body);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.info-item a {
+  color: var(--text-heading);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.info-item a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.quick-actions { display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap; }
+
+.map-link, .map-link-secondary {
+  color: var(--accent);
+  text-decoration: none;
+}
+.map-link:hover, .map-link-secondary:hover {
+  text-decoration: underline;
+}
+
+.map-open {
+  position: relative;
+  display: inline-block;
+}
+
+.map-open-btn {
+  margin-top: 0.5rem;
+}
+
+.map-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid color-mix(in oklab, var(--text-body) 20%, #fff);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-top: 6px;
+  min-width: 180px;
+  z-index: 10;
+}
+
+.map-options a {
+  display: block;
+  padding: 0.6rem 0.75rem;
+  color: var(--text-heading);
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.map-options a:hover { background: color-mix(in oklab, var(--accent) 18%, #fff); }
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 60px 0;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-form-container {
+    padding: 2rem;
+  }
+
+  .info-card {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-container {
+    padding: 1.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.8rem;
+  }
+
+  .consent-item label {
+    font-size: 0.9rem;
+  }
+
+  .info-card {
+    padding: 1.5rem;
+  }
+}

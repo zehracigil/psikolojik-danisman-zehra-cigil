@@ -1,0 +1,135 @@
+.hero {
+  background: transparent; /* use global gradient */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px; /* Account for fixed header */
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: var(--text-heading);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.hero-name {
+  color: color-mix(in oklab, var(--text-heading) 80%, var(--accent));
+  display: block;
+  font-size: 3.2rem;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: var(--text-body);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-photo-frame {
+  width: 420px;
+  aspect-ratio: 3 / 4;
+  background:
+    radial-gradient(circle at 25% 20%, rgba(168, 199, 216, 0.45), transparent 55%),
+    radial-gradient(circle at 80% 25%, rgba(47, 72, 88, 0.22), transparent 60%),
+    linear-gradient(150deg, rgba(255, 255, 255, 0.9), rgba(168, 199, 216, 0.55));
+  border-radius: 28px;
+  padding: 18px;
+  box-shadow: 0 28px 52px rgba(47, 72, 88, 0.16);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-photo-frame::after {
+  content: '';
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  top: 14%;
+  right: -70px;
+  filter: blur(0.5px);
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 18px 32px rgba(47, 72, 88, 0.18);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-name {
+    font-size: 2.4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-photo-frame {
+    width: 320px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .hero-photo-frame {
+    width: 260px;
+  }
+}

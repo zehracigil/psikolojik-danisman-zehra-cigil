@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Typography */
+  --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+
+  /* Clean, professional & calming theme */
+  --bg-soft-1: #f0f6f9; /* light blue-gray */
+  --bg-soft-2: #ffffff; /* near-white */
+  --text-heading: #3a5a58; /* muted soft blue */
+  --text-body: #2e2e2e; /* dark gray for readability */
+  --accent: #a8c7d8; /* pastel blue for highlights */
+  --btn-primary: #2f4858; /* dark navy */
+  --btn-primary-text: #ffffff;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: var(--text-body);
+  /* Calming diagonal background gradient across the whole page */
+  background: linear-gradient(135deg, #f0f6f9 0%, #ffffff 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6,
+button, input, select, textarea {
+  font-family: var(--font-sans);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in oklab, var(--accent) 80%, #ffffff);
+}
+
+/* Focus styles for accessibility */
+*:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Subtle scroll-reveal animations */
+.reveal { opacity: 0; transform: translateY(12px); transition: opacity 500ms ease, transform 500ms ease; }
+.reveal.in-view { opacity: 1; transform: translateY(0); }

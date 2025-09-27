@@ -1,0 +1,141 @@
+.reviews {
+  background-color: var(--bg-soft-1);
+  padding: 100px 0;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.review-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(47, 72, 88, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid var(--accent);
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0.75rem;
+}
+
+.review-initials {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: color-mix(in oklab, var(--accent) 30%, #ffffff);
+  border: 2px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-heading);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.review-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-rating {
+  margin-bottom: 0.35rem;
+}
+
+.star {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  background: var(--accent);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.review-text {
+  font-style: italic;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.review-name {
+  color: var(--text-heading);
+  font-weight: 600;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.review-note {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 1.5rem;
+  background: #efe8df;
+  border-radius: 10px;
+  border: 1px solid #e2d7c8;
+}
+
+.review-note p {
+  color: #6b5a5a;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .reviews {
+    padding: 60px 0;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .review-card {
+    padding: 1.5rem;
+  }
+
+  .review-text {
+    font-size: 1rem;
+  }
+
+  .review-note {
+    margin-top: 2rem;
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-card {
+    padding: 1.2rem;
+  }
+
+  .review-text {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,1 @@
+Place your background image for the About section here as about-bg.jpg (or update About.css accordingly).
