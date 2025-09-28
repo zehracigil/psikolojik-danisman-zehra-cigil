@@ -179,29 +179,19 @@ const Contact = () => {
                     className="map-link"
                     title="Google Haritalar'da görüntüle"
                   >
-                    Yeşil Mahallesi, 123. Sokak No: 18, Nazilli / Aydın
+                    Erkut apartmanı, Cumhuriyet, Hürriyet Cd. no 207, 09800 Nazilli/Aydın
                   </a>
                 </p>
-                <div className="map-open" ref={mapOpenRef}>
-                  <button
-                    type="button"
+                <div className="map-open">
+                  <a
+                    href={googleMapsViewUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="btn btn-secondary map-open-btn"
-                    onClick={() => setShowMapOptions((v) => !v)}
-                    aria-haspopup="menu"
-                    aria-expanded={showMapOptions}
+                    style={{ display: 'inline-block', textAlign: 'center' }}
                   >
-                    Haritalarda Aç
-                  </button>
-                  {showMapOptions && (
-                    <div className="map-options" role="menu" aria-label="Harita seçenekleri">
-                      <a href={googleMapsViewUrl} target="_blank" rel="noopener noreferrer" role="menuitem">
-                        Google Haritalar
-                      </a>
-                      <a href={appleMapsViewUrl} target="_blank" rel="noopener noreferrer" role="menuitem">
-                        Apple Haritalar
-                      </a>
-                    </div>
-                  )}
+                    Google Haritalar'da Aç
+                  </a>
                 </div>
               </div>
               <div className="info-item">
