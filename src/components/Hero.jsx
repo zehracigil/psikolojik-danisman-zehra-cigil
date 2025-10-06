@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              Psikolojik Danışman <span className="hero-name">Zehra Çığıl Emir</span>
+              Psikolojik Danışman <span className="hero-name">Zehra Emir Çığıl</span>
             </h1>
             <p className="hero-subtitle">
               Sağlıklı bir zihin, huzurlu bir yaşam.
@@ -19,11 +19,11 @@ const Hero = () => {
             </div>
           </div>
           <div className="hero-image">
-            <figure className="hero-photo-frame" aria-label="Psikolojik Danışman Zehra Çığıl Emir">
+            <figure className="hero-photo-frame" aria-label="Psikolojik Danışman Zehra Emir Çığıl">
               <img
                 className="hero-photo"
                 src="/images/hero-photo.jpg"
-                alt="Psikolojik Danışman Zehra Çığıl Emir danışanlarıyla buluşmaya hazır."
+                alt="Psikolojik Danışman Zehra Emir Çığıl danışanlarıyla buluşmaya hazır."
                 loading="eager"
               />
             </figure>

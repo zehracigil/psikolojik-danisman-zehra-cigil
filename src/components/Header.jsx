@@ -3,7 +3,7 @@ import './Header.css'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-                alt="Psikolojik Danışman Zehra Çığıl Emir"
+  const [activeId, setActiveId] = useState('about')
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -59,13 +59,13 @@ const Header = () => {
             <img
               className="avatar"
               src="/images/zehra-header.jpg"
-              alt="Psikolojik Danışman Zehra Çığıl Emir"
+              alt="Psikolojik Danışman Zehra Emir Çığıl"
               loading="lazy"
             />
             <div className="logo-text">
               <span className="logo-title">
                 <span className="logo-role">Psikolojik Danışman</span>
-                <span className="logo-name">Zehra Çığıl Emir</span>
+                <span className="logo-name">Zehra Emir Çığıl</span>
               </span>
             </div>
           </div>
