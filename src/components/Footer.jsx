@@ -50,7 +50,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <h3>Hakkımda</h3>
-            <p>Psikolojik Danışman Zehra Emir Çığıl. Nazilli, Aydın’da danışanlarıyla çalışan, etik ve bilimsel temelli bir danışmanlık yaklaşımı.</p>
+            <p>Psikolojik Danışman Zehra Çığıl Emir. Nazilli, Aydın’da danışanlarıyla çalışan, etik ve bilimsel temelli bir danışmanlık yaklaşımı.</p>
           </div>
 
           <div className="footer-section">
@@ -91,7 +91,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2025 Psikolojik Danışman Zehra Emir Çığıl. Tüm hakları saklıdır.</p>
+          <p>&copy; 2025 Psikolojik Danışman Zehra Çığıl Emir. Tüm hakları saklıdır.</p>
           <div className="footer-links">
             <a href="#">Gizlilik Politikası</a>
             <a href="#">Kullanım Şartları</a>

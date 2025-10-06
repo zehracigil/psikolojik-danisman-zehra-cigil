@@ -67,7 +67,7 @@ const About = () => {
   return (
     <section id="about" className="about section">
       <div className="container about-hero">
-  <h1 className="about-title">Psikolojik Danışman Zehra Emir Çığıl</h1>
+  <h1 className="about-title">Psikolojik Danışman Zehra Çığıl Emir</h1>
 
         {/* Bio Card: Birkaç kelime ile... with Read more */}
         <section className="about-bio" aria-labelledby="about-bio-title">
