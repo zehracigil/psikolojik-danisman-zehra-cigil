@@ -3,12 +3,14 @@ import { useEffect, useRef } from 'react'
 import img1 from '../assets/childrensessions1.jpg'
 import img2 from '../assets/childrensessions2.jpg'
 import img3 from '../assets/childrensessions3.jpg'
+import img4 from '../assets/childrensessions4.jpg'
 
 const ChildrenSessions = () => {
   const slides = [
     { src: img1, caption: 'Oyun Saati' },
     { src: img2, caption: 'Renkli Seanslar' },
     { src: img3, caption: 'Keşfet & Öğren' },
+    { src: img4, caption: 'Konforlu Seans Ortamı' },
   ]
 
   const trackRef = useRef(null)

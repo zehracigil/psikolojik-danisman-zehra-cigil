@@ -87,7 +87,7 @@
 .social-icon {
   width: 22px;
   height: 22px;
-  fill: var(--text-heading);
+  fill: #1f3a47; /* Daha canlı ve koyu bir renk */
   transition: fill 0.25s ease;
 }
 
